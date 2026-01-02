@@ -1,0 +1,371 @@
+2026-01-02 11:31:20,801 - Knowledge - INFO - Created shared MongoDB connection pool
+2026-01-02 11:31:21,134 - Knowledge - INFO - Starting Knowledge Graph processing with 20 threads
+2026-01-02 11:31:21,322 - Knowledge - INFO - Initial configuration: chunk_size=65536, max_cache_size=500
+2026-01-02 11:31:21,478 - Knowledge - INFO - Knowledge Graph concurrency configuration: workers=20, max_batch_size=10, max_concurrent_llm_calls=50
+2026-01-02 11:31:23,021 - Knowledge - INFO - 🔍 _load_persisted_knowledge called - checking for Redis optimization
+2026-01-02 11:31:23,198 - Knowledge - WARNING - ❌ load_from_redis method not found - Redis support not attached
+2026-01-02 11:31:23,419 - Knowledge - INFO - load persisted knowledge: begin
+2026-01-02 11:31:23,589 - Knowledge - INFO - Loaded 0 files from persisted knowledge
+2026-01-02 11:31:23,765 - Knowledge - INFO - load persisted knowledge: end
+2026-01-02 11:31:23,953 - Knowledge - WARNING - No persisted knowledge found. Files will be queued during start()
+2026-01-02 11:31:24,156 - Knowledge - INFO - Redis support added with prefix knowledge:b8647l5:
+2026-01-02 11:31:24,423 - Knowledge - INFO - Starting knowledge initialization for ID: zQZUm2-b8647l5
+2026-01-02 11:31:24,621 - Knowledge - INFO - 🔍 Checking Redis for build_id: b8647l5
+2026-01-02 11:31:24,793 - Knowledge - INFO - 🔍 Full session ID: zQZUm2-b8647l5
+2026-01-02 11:31:24,990 - Knowledge - INFO - 🔍 Redis prefix will be: knowledge:b8647l5:
+2026-01-02 11:31:25,157 - Knowledge - INFO - 🔍 Using attached load_from_redis() method
+2026-01-02 11:31:25,327 - Knowledge - INFO - 🔍 Attempting to load knowledge from Redis...
+2026-01-02 11:31:25,525 - Knowledge - INFO - 🔍 Using derived instance_id for Redis lookup: b8647l5
+2026-01-02 11:31:25,695 - Knowledge - WARNING - ❌ No Redis cache found
+2026-01-02 11:31:25,853 - Knowledge - INFO - 📁 Loading knowledge from disk...
+2026-01-02 11:31:26,098 - Knowledge - INFO - load persisted docinfo: begin
+2026-01-02 11:31:26,285 - Knowledge - INFO - load persisted docinfo: end
+2026-01-02 11:31:26,472 - Knowledge - INFO - 🔍 _load_persisted_knowledge called - checking for Redis optimization
+2026-01-02 11:31:26,627 - Knowledge - INFO - ✅ load_from_redis method found - attempting Redis load
+2026-01-02 11:31:26,826 - Knowledge - INFO - 🔍 Attempting to load knowledge from Redis...
+2026-01-02 11:31:27,004 - Knowledge - INFO - 🔍 Using derived instance_id for Redis lookup: b8647l5
+2026-01-02 11:31:27,195 - Knowledge - WARNING - ❌ No Redis cache found
+2026-01-02 11:31:27,370 - Knowledge - INFO - ❌ Redis load returned False - falling back to file loading
+2026-01-02 11:31:27,528 - Knowledge - INFO - load persisted knowledge: begin
+2026-01-02 11:31:27,744 - Knowledge - INFO - Loaded 0 files from persisted knowledge
+2026-01-02 11:31:27,938 - Knowledge - INFO - load persisted knowledge: end
+2026-01-02 11:31:28,113 - Knowledge - INFO - 📁 Disk load complete in 2.06s
+2026-01-02 11:31:28,274 - Knowledge - INFO - Populating ingest queue with source files...
+2026-01-02 11:31:28,557 - Knowledge - INFO - Added 50 files from /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667 to ingest queue
+2026-01-02 11:31:28,741 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 159, Duration: 0ms
+2026-01-02 11:31:28,937 - Knowledge - INFO - Worker kw1 created using shared MongoDB connection pool
+2026-01-02 11:31:29,119 - Knowledge - INFO - knowledge worker kw1 start
+2026-01-02 11:31:29,120 - Knowledge - INFO - Worker kw2 created using shared MongoDB connection pool
+2026-01-02 11:31:29,302 - Knowledge - INFO - [kw1] Queue=50, InProgress=0, PendingWorkers=0/1, Completed=0/50 (0.0%)
+2026-01-02 11:31:29,377 - Knowledge - INFO - knowledge worker kw2 start
+2026-01-02 11:31:29,377 - Knowledge - INFO - Worker kw3 created using shared MongoDB connection pool
+2026-01-02 11:31:29,498 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=50, active_workers=0/2
+2026-01-02 11:31:29,591 - Knowledge - INFO - [kw2] Queue=50, InProgress=0, PendingWorkers=0/2, Completed=0/50 (0.0%)
+2026-01-02 11:31:29,687 - Knowledge - INFO - knowledge worker kw3 start
+2026-01-02 11:31:29,687 - Knowledge - INFO - Worker kw4 created using shared MongoDB connection pool
+2026-01-02 11:31:29,795 - Knowledge - INFO - Worker kw1 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/DownloadPdf.aspx.cs
+2026-01-02 11:31:29,899 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=50, active_workers=1/3
+2026-01-02 11:31:29,985 - Knowledge - INFO - [kw3] Queue=46, InProgress=0, PendingWorkers=1/3, Completed=0/50 (0.0%)
+2026-01-02 11:31:30,107 - Knowledge - INFO - knowledge worker kw4 start
+2026-01-02 11:31:30,108 - Knowledge - INFO - Worker kw5 created using shared MongoDB connection pool
+2026-01-02 11:31:30,179 - Knowledge - INFO - Fast-tracked /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/DownloadPdf.aspx.cs (ext=.cs, size=1655)
+2026-01-02 11:31:30,269 - Knowledge - INFO - Worker kw2 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/TakenCourses.aspx.designer.cs
+2026-01-02 11:31:30,368 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=46, active_workers=2/4
+2026-01-02 11:31:30,458 - Knowledge - INFO - [kw4] Queue=42, InProgress=0, PendingWorkers=2/4, Completed=0/50 (0.0%)
+2026-01-02 11:31:30,537 - Knowledge - INFO - knowledge worker kw5 start
+2026-01-02 11:31:30,541 - Knowledge - INFO - Worker kw6 created using shared MongoDB connection pool
+2026-01-02 11:31:30,618 - Knowledge - INFO - Worker kw1 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/SignUpPage.aspx.designer.cs
+2026-01-02 11:31:30,718 - Knowledge - INFO - Worker kw2 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/SetExam.aspx.designer.cs
+2026-01-02 11:31:30,832 - Knowledge - INFO - Worker kw3 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/EditMCQ.aspx.designer.cs
+2026-01-02 11:31:30,917 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=42, active_workers=3/5
+2026-01-02 11:31:31,022 - Knowledge - INFO - [kw5] Queue=38, InProgress=0, PendingWorkers=3/5, Completed=0/50 (0.0%)
+2026-01-02 11:31:31,107 - Knowledge - INFO - knowledge worker kw6 start
+2026-01-02 11:31:31,107 - Knowledge - INFO - Worker kw7 created using shared MongoDB connection pool
+2026-01-02 11:31:31,177 - Knowledge - INFO - Worker kw1 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/ShowAns.aspx.designer.cs
+2026-01-02 11:31:31,250 - Knowledge - INFO - Worker kw2 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/TheoryExam.aspx.cs
+2026-01-02 11:31:31,371 - Knowledge - INFO - Worker kw3 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/TheorySet.aspx.designer.cs
+2026-01-02 11:31:31,443 - Knowledge - INFO - Worker kw4 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/AdminQueue.aspx.cs
+2026-01-02 11:31:31,528 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=38, active_workers=4/6
+2026-01-02 11:31:31,599 - Knowledge - INFO - [kw6] Queue=34, InProgress=0, PendingWorkers=4/6, Completed=0/50 (0.0%)
+2026-01-02 11:31:31,679 - Knowledge - INFO - knowledge worker kw7 start
+2026-01-02 11:31:31,680 - Knowledge - INFO - Worker kw8 created using shared MongoDB connection pool
+2026-01-02 11:31:31,810 - Knowledge - INFO - Worker kw1 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/ExamResult.aspx.cs
+2026-01-02 11:31:31,922 - Knowledge - INFO - Worker kw2 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/LoginPage.aspx.cs
+2026-01-02 11:31:32,033 - Knowledge - INFO - Worker kw3 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/AdminLeaderboard.aspx.cs
+2026-01-02 11:31:32,119 - Knowledge - INFO - Fast-tracked /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/AdminQueue.aspx.cs (ext=.cs, size=1159)
+2026-01-02 11:31:32,207 - Knowledge - INFO - Worker kw5 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/AdminPanel.aspx.designer.cs
+2026-01-02 11:31:32,302 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=34, active_workers=5/7
+2026-01-02 11:31:32,414 - Knowledge - INFO - [kw7] Queue=30, InProgress=0, PendingWorkers=5/7, Completed=0/50 (0.0%)
+2026-01-02 11:31:32,534 - Knowledge - INFO - knowledge worker kw8 start
+2026-01-02 11:31:32,534 - Knowledge - INFO - Worker kw9 created using shared MongoDB connection pool
+2026-01-02 11:31:32,785 - Knowledge - INFO - Worker kw3 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/AdminCourseQueue.aspx.designer.cs
+2026-01-02 11:31:32,882 - Knowledge - INFO - Worker kw4 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/Leaderboard.aspx.designer.cs
+2026-01-02 11:31:32,971 - Knowledge - INFO - Worker kw5 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/StartExam.aspx.designer.cs
+2026-01-02 11:31:33,070 - Knowledge - INFO - Worker kw6 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/UserProfile.aspx.cs
+2026-01-02 11:31:33,225 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=30, active_workers=6/8
+2026-01-02 11:31:33,306 - Knowledge - INFO - [kw8] Queue=26, InProgress=0, PendingWorkers=6/8, Completed=0/50 (0.0%)
+2026-01-02 11:31:33,391 - Knowledge - INFO - knowledge worker kw9 start
+2026-01-02 11:31:33,391 - Knowledge - INFO - Worker kw10 created using shared MongoDB connection pool
+2026-01-02 11:31:33,569 - Knowledge - INFO - Worker kw4 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/MCQExam.aspx.cs
+2026-01-02 11:31:33,647 - Knowledge - INFO - Worker kw5 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/Dashboard.aspx.cs
+2026-01-02 11:31:33,777 - Knowledge - INFO - Worker kw6 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/EditTheory.aspx.designer.cs
+2026-01-02 11:31:33,871 - Knowledge - INFO - Worker kw7 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/MCQExam.aspx.designer.cs
+2026-01-02 11:31:33,979 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=26, active_workers=7/9
+2026-01-02 11:31:34,052 - Knowledge - INFO - [kw9] Queue=22, InProgress=0, PendingWorkers=7/9, Completed=0/50 (0.0%)
+2026-01-02 11:31:34,164 - Knowledge - INFO - knowledge worker kw10 start
+2026-01-02 11:31:34,164 - Knowledge - INFO - Worker kw11 created using shared MongoDB connection pool
+2026-01-02 11:31:34,249 - Knowledge - INFO - Worker kw4 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/MCQSet.aspx.designer.cs
+2026-01-02 11:31:34,368 - Knowledge - INFO - Fast-tracked /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/Dashboard.aspx.cs (ext=.cs, size=1014)
+2026-01-02 11:31:34,449 - Knowledge - INFO - Worker kw6 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/ShowAns.aspx.cs
+2026-01-02 11:31:34,521 - Knowledge - INFO - Worker kw7 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/CSS/bootstrap.css
+2026-01-02 11:31:34,589 - Knowledge - INFO - Worker kw8 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/Dashboard.aspx.designer.cs
+2026-01-02 11:31:34,701 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=22, active_workers=8/10
+2026-01-02 11:31:34,793 - Knowledge - INFO - [kw10] Queue=18, InProgress=0, PendingWorkers=8/10, Completed=0/50 (0.0%)
+2026-01-02 11:31:34,885 - Knowledge - INFO - knowledge worker kw11 start
+2026-01-02 11:31:34,885 - Knowledge - INFO - Worker kw12 created using shared MongoDB connection pool
+2026-01-02 11:31:35,080 - Knowledge - INFO - Worker kw5 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/EditExam.aspx.designer.cs
+2026-01-02 11:31:35,149 - Knowledge - INFO - Worker kw6 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/SignUpPage.aspx.cs
+2026-01-02 11:31:35,226 - Knowledge - INFO - Fast-tracked /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/CSS/bootstrap.css (ext=.css, size=260877)
+2026-01-02 11:31:35,328 - Knowledge - INFO - Worker kw8 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/SetExam.aspx.cs
+2026-01-02 11:31:35,439 - Knowledge - INFO - Worker kw9 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/UserProfile.aspx.designer.cs
+2026-01-02 11:31:35,506 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=18, active_workers=9/11
+2026-01-02 11:31:35,740 - Knowledge - INFO - [kw11] Queue=14, InProgress=0, PendingWorkers=9/11, Completed=0/50 (0.0%)
+2026-01-02 11:31:35,814 - Knowledge - INFO - knowledge worker kw12 start
+2026-01-02 11:31:35,814 - Knowledge - INFO - Worker kw13 created using shared MongoDB connection pool
+2026-01-02 11:31:36,011 - Knowledge - INFO - Fast-tracked /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/UserProfile.aspx.cs (small file (2748 bytes))
+2026-01-02 11:31:36,144 - Knowledge - INFO - Worker kw7 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/EditMCQ.aspx.cs
+2026-01-02 11:31:36,238 - Knowledge - INFO - Fast-tracked /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/SetExam.aspx.cs (ext=.cs, size=1303)
+2026-01-02 11:31:36,328 - Knowledge - INFO - Worker kw9 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/Properties/AssemblyInfo.cs
+2026-01-02 11:31:36,397 - Knowledge - INFO - Worker kw10 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/LoginPage.aspx.designer.cs
+2026-01-02 11:31:36,534 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=14, active_workers=10/12
+2026-01-02 11:31:36,641 - Knowledge - INFO - [kw12] Queue=10, InProgress=0, PendingWorkers=10/12, Completed=0/50 (0.0%)
+2026-01-02 11:31:36,733 - Knowledge - INFO - knowledge worker kw13 start
+2026-01-02 11:31:36,733 - Knowledge - INFO - Worker kw14 created using shared MongoDB connection pool
+2026-01-02 11:31:36,896 - Knowledge - INFO - Worker kw7 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/TheorySet.aspx.cs
+2026-01-02 11:31:37,016 - Knowledge - INFO - Worker kw8 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/TakenCourses.aspx.cs
+2026-01-02 11:31:37,118 - Knowledge - INFO - Fast-tracked /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/Properties/AssemblyInfo.cs (ext=.cs, size=1403)
+2026-01-02 11:31:37,202 - Knowledge - INFO - Worker kw10 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/MCQSet.aspx.cs
+2026-01-02 11:31:37,321 - Knowledge - INFO - Worker kw11 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/ExamResult.aspx.designer.cs
+2026-01-02 11:31:37,410 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=10, active_workers=11/13
+2026-01-02 11:31:37,485 - Knowledge - INFO - [kw13] Queue=6, InProgress=0, PendingWorkers=11/13, Completed=0/50 (0.0%)
+2026-01-02 11:31:37,604 - Knowledge - INFO - knowledge worker kw14 start
+2026-01-02 11:31:37,604 - Knowledge - INFO - Worker kw15 created using shared MongoDB connection pool
+2026-01-02 11:31:37,761 - Knowledge - INFO - Fast-tracked /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/TakenCourses.aspx.cs (ext=.cs, size=926)
+2026-01-02 11:31:37,850 - Knowledge - INFO - Worker kw9 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/TheoryExam.aspx.designer.cs
+2026-01-02 11:31:37,933 - Knowledge - INFO - Worker kw10 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/AdminLeaderboard.aspx.designer.cs
+2026-01-02 11:31:38,020 - Knowledge - INFO - Worker kw11 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/StartExam.aspx.cs
+2026-01-02 11:31:38,130 - Knowledge - INFO - Worker kw12 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/EditExam.aspx.cs
+2026-01-02 11:31:38,207 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=6, active_workers=12/14
+2026-01-02 11:31:38,296 - Knowledge - INFO - [kw14] Queue=2, InProgress=0, PendingWorkers=12/14, Completed=0/50 (0.0%)
+2026-01-02 11:31:38,374 - Knowledge - INFO - knowledge worker kw15 start
+2026-01-02 11:31:38,375 - Knowledge - INFO - Worker kw16 created using shared MongoDB connection pool
+2026-01-02 11:31:38,445 - Knowledge - INFO - Worker kw8 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/AdminCourseQueue.aspx.cs
+2026-01-02 11:31:38,531 - Knowledge - INFO - Worker kw9 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/Leaderboard.aspx.cs
+2026-01-02 11:31:38,612 - Knowledge - INFO - Worker kw10 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/AdminQueue.aspx.designer.cs
+2026-01-02 11:31:38,696 - Knowledge - INFO - Worker kw11 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/AdminPanel.aspx.cs
+2026-01-02 11:31:38,767 - Knowledge - INFO - Fast-tracked /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/EditExam.aspx.cs (ext=.cs, size=1213)
+2026-01-02 11:31:38,858 - Knowledge - INFO - Worker kw13 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/database-script/README.md
+2026-01-02 11:31:38,960 - Knowledge - INFO - Batch sizing: calculated=2, max_allowed=10, queue=2, active_workers=13/15
+2026-01-02 11:31:39,030 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 159, Duration: 0ms
+2026-01-02 11:31:39,142 - Knowledge - INFO - knowledge worker kw16 start
+2026-01-02 11:31:39,142 - Knowledge - INFO - Worker kw17 created using shared MongoDB connection pool
+2026-01-02 11:31:39,235 - Knowledge - INFO - Fast-tracked /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/Dashboard.aspx.designer.cs (small file (2951 bytes))
+2026-01-02 11:31:39,331 - Knowledge - INFO - Fast-tracked /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/Leaderboard.aspx.cs (ext=.cs, size=1907)
+2026-01-02 11:31:39,563 - Knowledge - INFO - Fast-tracked /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/AdminPanel.aspx.cs (ext=.cs, size=1165)
+2026-01-02 11:31:39,641 - Knowledge - INFO - Worker kw12 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/EditTheory.aspx.cs
+2026-01-02 11:31:39,710 - Knowledge - INFO - Fast-tracked /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/database-script/README.md (ext=.md, size=45)
+2026-01-02 11:31:39,919 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 889ms
+2026-01-02 11:31:40,090 - Knowledge - INFO - knowledge worker kw17 start
+2026-01-02 11:31:40,091 - Knowledge - INFO - Worker kw18 created using shared MongoDB connection pool
+2026-01-02 11:31:40,174 - Knowledge - INFO - Fast-tracked /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/AdminCourseQueue.aspx.cs (small file (2960 bytes))
+2026-01-02 11:31:40,371 - Knowledge - INFO - Worker kw11 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/DownloadPdf.aspx.designer.cs
+2026-01-02 11:31:40,451 - Knowledge - INFO - Worker kw12 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/README.md
+2026-01-02 11:31:40,521 - Knowledge - INFO - Worker kw13 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/packages/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0/lib/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+2026-01-02 11:31:40,676 - Knowledge - INFO - Progress: 0.0% | Files: 0/50 | Rate: 0.00 files/sec | Queue: 0
+2026-01-02 11:31:40,882 - Knowledge - INFO - knowledge worker kw18 start
+2026-01-02 11:31:40,882 - Knowledge - INFO - Worker kw19 created using shared MongoDB connection pool
+2026-01-02 11:31:40,971 - Knowledge - INFO - Processing batch of 4 files
+2026-01-02 11:31:41,153 - Knowledge - INFO - Fast-tracked /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/README.md (ext=.md, size=1830)
+2026-01-02 11:31:41,233 - Knowledge - INFO - Fast-tracked /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/packages/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0/lib/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml (ext=.xml, size=1805)
+2026-01-02 11:31:41,504 - Knowledge - INFO - knowledge worker kw19 start
+2026-01-02 11:31:41,505 - Knowledge - INFO - Worker kw20 created using shared MongoDB connection pool
+2026-01-02 11:31:41,603 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/Dashboard.aspx.designer.cs
+2026-01-02 11:31:41,669 - Knowledge - INFO - Worker kw12 processing /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/database-script/Online-Examination-System-Databse-Script.sql
+2026-01-02 11:31:41,748 - Knowledge - INFO - Fast-tracked /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/AdminLeaderboard.aspx.cs (small file (2319 bytes))
+2026-01-02 11:31:41,750 - Knowledge - INFO - Processing batch of 2 files
+2026-01-02 11:31:41,940 - Knowledge - INFO - knowledge worker kw20 start
+2026-01-02 11:31:42,033 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/SetExam.aspx.cs
+2026-01-02 11:31:42,324 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/database-script/README.md
+2026-01-02 11:31:42,459 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 285, Duration: 0ms
+2026-01-02 11:31:42,551 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/TakenCourses.aspx.cs
+2026-01-02 11:31:42,643 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/packages/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0/lib/net45/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+2026-01-02 11:31:42,708 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 250ms
+2026-01-02 11:31:42,821 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/AdminCourseQueue.aspx.cs
+2026-01-02 11:31:43,048 - Knowledge - INFO - Progress: 12.0% | Files: 6/50 | Rate: 0.28 files/sec | Queue: 0
+2026-01-02 11:31:48,081 - Knowledge - INFO - Fast-tracked /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/LoginPage.aspx.cs (small file (2323 bytes))
+2026-01-02 11:31:49,390 - Knowledge - INFO - Fast-tracked /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/database-script/Online-Examination-System-Databse-Script.sql (small file (0 bytes))
+2026-01-02 11:31:52,651 - Knowledge - INFO - Fast-tracked /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/SignUpPage.aspx.cs (small file (2642 bytes))
+2026-01-02 11:31:53,884 - Knowledge - INFO - [LLM_CALL] Completed: EditTheory.aspx.cs:chunk1, Duration: 11768ms, PromptTokens: 6824, CompletionTokens: 595, Cost: $0.00092
+2026-01-02 11:31:54,114 - Knowledge - INFO - done ingest for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/EditTheory.aspx.cs
+2026-01-02 11:31:54,159 - Knowledge - INFO - [LLM_CALL] Completed: SetExam.aspx.designer.cs:chunk1, Duration: 19224ms, PromptTokens: 2324, CompletionTokens: 295, Cost: $0.00035
+2026-01-02 11:31:54,581 - Knowledge - INFO - done ingest for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/SetExam.aspx.designer.cs
+2026-01-02 11:31:54,581 - Knowledge - INFO - Processing batch of 4 files
+2026-01-02 11:31:55,025 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/EditExam.aspx.cs
+2026-01-02 11:31:55,499 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/EditTheory.aspx.cs
+2026-01-02 11:31:55,538 - Knowledge - INFO - [LLM_CALL] Completed: TakenCourses.aspx.designer.cs:chunk1, Duration: 22829ms, PromptTokens: 2854, CompletionTokens: 310, Cost: $0.00041
+2026-01-02 11:31:55,873 - Knowledge - INFO - done ingest for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/TakenCourses.aspx.designer.cs
+2026-01-02 11:31:56,034 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/README.md
+2026-01-02 11:31:56,881 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/database-script/Online-Examination-System-Databse-Script.sql
+2026-01-02 11:31:57,011 - Knowledge - INFO - [LLM_CALL] Completed: SignUpPage.aspx.designer.cs:chunk1, Duration: 24367ms, PromptTokens: 4530, CompletionTokens: 386, Cost: $0.00061
+2026-01-02 11:31:57,296 - Knowledge - INFO - done ingest for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/SignUpPage.aspx.designer.cs
+2026-01-02 11:31:58,238 - Knowledge - INFO - [LLM_CALL] Completed: ExamResult.aspx.cs:chunk1, Duration: 18340ms, PromptTokens: 2534, CompletionTokens: 427, Cost: $0.00042
+2026-01-02 11:31:58,445 - Knowledge - INFO - done ingest for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/ExamResult.aspx.cs
+2026-01-02 11:31:59,156 - Knowledge - INFO - [LLM_CALL] Completed: ShowAns.aspx.cs:chunk1, Duration: 16448ms, PromptTokens: 5284, CompletionTokens: 490, Cost: $0.00072
+2026-01-02 11:31:59,477 - Knowledge - INFO - done ingest for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/ShowAns.aspx.cs
+2026-01-02 11:31:59,489 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 288, Duration: 0ms
+2026-01-02 11:32:00,125 - Knowledge - INFO - [LLM_CALL] Completed: EditMCQ.aspx.designer.cs:chunk1, Duration: 26623ms, PromptTokens: 2742, CompletionTokens: 345, Cost: $0.00041
+2026-01-02 11:32:00,465 - Knowledge - INFO - done ingest for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/EditMCQ.aspx.designer.cs
+2026-01-02 11:32:00,483 - Knowledge - INFO - [LLM_CALL] Completed: TheoryExam.aspx.cs:chunk1, Duration: 20598ms, PromptTokens: 6524, CompletionTokens: 574, Cost: $0.00088
+2026-01-02 11:32:00,855 - Knowledge - INFO - done ingest for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/TheoryExam.aspx.cs
+2026-01-02 11:32:00,870 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 1381ms
+2026-01-02 11:32:01,209 - Knowledge - INFO - Progress: 20.0% | Files: 10/50 | Rate: 0.26 files/sec | Queue: 0
+2026-01-02 11:32:01,220 - Knowledge - INFO - [LLM_CALL] Completed: EditTheory.aspx.designer.cs:chunk1, Duration: 24399ms, PromptTokens: 2738, CompletionTokens: 325, Cost: $0.00040
+2026-01-02 11:32:01,577 - Knowledge - INFO - done ingest for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/EditTheory.aspx.designer.cs
+2026-01-02 11:32:01,578 - Knowledge - INFO - Processing batch of 4 files
+2026-01-02 11:32:01,872 - Knowledge - INFO - [LLM_CALL] Completed: TheorySet.aspx.designer.cs:chunk1, Duration: 25591ms, PromptTokens: 4398, CompletionTokens: 364, Cost: $0.00059
+2026-01-02 11:32:02,031 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/TakenCourses.aspx.designer.cs
+2026-01-02 11:32:02,149 - Knowledge - INFO - done ingest for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/TheorySet.aspx.designer.cs
+2026-01-02 11:32:02,156 - Knowledge - INFO - [LLM_CALL] Completed: ShowAns.aspx.designer.cs:chunk1, Duration: 27379ms, PromptTokens: 9958, CompletionTokens: 602, Cost: $0.00124
+2026-01-02 11:32:02,364 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/SetExam.aspx.designer.cs
+2026-01-02 11:32:02,480 - Knowledge - INFO - done ingest for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/ShowAns.aspx.designer.cs
+2026-01-02 11:32:02,482 - Knowledge - INFO - Processing batch of 4 files
+2026-01-02 11:32:02,636 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/TheoryExam.aspx.cs
+2026-01-02 11:32:02,888 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/UserProfile.aspx.cs
+2026-01-02 11:32:03,014 - Knowledge - INFO - [LLM_CALL] Completed: AdminCourseQueue.aspx.designer.cs:chunk1, Duration: 20766ms, PromptTokens: 2336, CompletionTokens: 287, Cost: $0.00035
+2026-01-02 11:32:03,136 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/LoginPage.aspx.cs
+2026-01-02 11:32:03,318 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/EditTheory.aspx.designer.cs
+2026-01-02 11:32:03,345 - Knowledge - INFO - done ingest for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/AdminCourseQueue.aspx.designer.cs
+2026-01-02 11:32:03,348 - Knowledge - INFO - Processing batch of 4 files
+2026-01-02 11:32:03,686 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/ShowAns.aspx.cs
+2026-01-02 11:32:03,863 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/DownloadPdf.aspx.cs
+2026-01-02 11:32:04,155 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/SignUpPage.aspx.cs
+2026-01-02 11:32:04,205 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/SignUpPage.aspx.designer.cs
+2026-01-02 11:32:04,256 - Knowledge - INFO - Processing batch of 4 files
+2026-01-02 11:32:04,704 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/EditMCQ.aspx.designer.cs
+2026-01-02 11:32:05,076 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/TheorySet.aspx.designer.cs
+2026-01-02 11:32:05,967 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/ShowAns.aspx.designer.cs
+2026-01-02 11:32:06,209 - Knowledge - INFO - [LLM_CALL] Completed: UserProfile.aspx.designer.cs:chunk1, Duration: 25533ms, PromptTokens: 4076, CompletionTokens: 336, Cost: $0.00054
+2026-01-02 11:32:06,432 - Knowledge - INFO - done ingest for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/UserProfile.aspx.designer.cs
+2026-01-02 11:32:06,456 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/AdminLeaderboard.aspx.cs
+2026-01-02 11:32:06,655 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/ExamResult.aspx.cs
+2026-01-02 11:32:06,718 - Knowledge - INFO - [LLM_CALL] Completed: EditExam.aspx.designer.cs:chunk1, Duration: 16246ms, PromptTokens: 2328, CompletionTokens: 288, Cost: $0.00035
+2026-01-02 11:32:07,133 - Knowledge - INFO - done ingest for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/EditExam.aspx.designer.cs
+2026-01-02 11:32:07,377 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/AdminCourseQueue.aspx.designer.cs
+2026-01-02 11:32:07,546 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 290, Duration: 0ms
+2026-01-02 11:32:07,743 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 197ms
+2026-01-02 11:32:07,967 - Knowledge - INFO - Progress: 52.0% | Files: 26/50 | Rate: 0.56 files/sec | Queue: 0
+2026-01-02 11:32:07,977 - Knowledge - INFO - [LLM_CALL] Completed: AdminPanel.aspx.designer.cs:chunk1, Duration: 32036ms, PromptTokens: 2324, CompletionTokens: 256, Cost: $0.00033
+2026-01-02 11:32:08,526 - Knowledge - INFO - done ingest for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/AdminPanel.aspx.designer.cs
+2026-01-02 11:32:08,590 - Knowledge - INFO - [LLM_CALL] Completed: MCQExam.aspx.cs:chunk1, Duration: 30146ms, PromptTokens: 5284, CompletionTokens: 580, Cost: $0.00076
+2026-01-02 11:32:09,096 - Knowledge - INFO - done ingest for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/MCQExam.aspx.cs
+2026-01-02 11:32:09,113 - Knowledge - INFO - [LLM_CALL] Completed: TheoryExam.aspx.designer.cs:chunk1, Duration: 17010ms, PromptTokens: 7834, CompletionTokens: 507, Cost: $0.00099
+2026-01-02 11:32:09,613 - Knowledge - INFO - done ingest for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/TheoryExam.aspx.designer.cs
+2026-01-02 11:32:10,536 - Knowledge - INFO - [LLM_CALL] Completed: MCQSet.aspx.designer.cs:chunk1, Duration: 23856ms, PromptTokens: 5186, CompletionTokens: 427, Cost: $0.00069
+2026-01-02 11:32:10,775 - Knowledge - INFO - done ingest for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/MCQSet.aspx.designer.cs
+2026-01-02 11:32:11,052 - Knowledge - INFO - [LLM_CALL] Completed: StartExam.aspx.designer.cs:chunk1, Duration: 29930ms, PromptTokens: 3506, CompletionTokens: 374, Cost: $0.00050
+2026-01-02 11:32:11,271 - Knowledge - INFO - done ingest for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/StartExam.aspx.designer.cs
+2026-01-02 11:32:12,107 - Knowledge - INFO - [LLM_CALL] Completed: Leaderboard.aspx.designer.cs:chunk1, Duration: 37113ms, PromptTokens: 2334, CompletionTokens: 292, Cost: $0.00035
+2026-01-02 11:32:12,334 - Knowledge - INFO - done ingest for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/Leaderboard.aspx.designer.cs
+2026-01-02 11:32:12,528 - Knowledge - INFO - Processing batch of 4 files
+2026-01-02 11:32:12,596 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 290, Duration: 0ms
+2026-01-02 11:32:12,766 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/AdminPanel.aspx.designer.cs
+2026-01-02 11:32:12,965 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 369ms
+2026-01-02 11:32:13,215 - Knowledge - INFO - Progress: 62.0% | Files: 35/50 | Rate: 0.68 files/sec | Queue: 0
+2026-01-02 11:32:13,234 - Knowledge - INFO - [LLM_CALL] Completed: DownloadPdf.aspx.designer.cs:chunk1, Duration: 14393ms, PromptTokens: 5038, CompletionTokens: 387, Cost: $0.00066
+2026-01-02 11:32:13,633 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/StartExam.aspx.designer.cs
+2026-01-02 11:32:13,639 - Knowledge - INFO - done ingest for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/DownloadPdf.aspx.designer.cs
+2026-01-02 11:32:13,640 - Knowledge - INFO - Processing batch of 4 files
+2026-01-02 11:32:13,658 - Knowledge - INFO - Processing batch of 4 files
+2026-01-02 11:32:14,083 - Knowledge - INFO - [LLM_CALL] Completed: MCQExam.aspx.designer.cs:chunk1, Duration: 36395ms, PromptTokens: 4738, CompletionTokens: 405, Cost: $0.00064
+2026-01-02 11:32:14,091 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/Dashboard.aspx.cs
+2026-01-02 11:32:14,295 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/UserProfile.aspx.designer.cs
+2026-01-02 11:32:14,421 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/AdminQueue.aspx.cs
+2026-01-02 11:32:14,603 - Knowledge - INFO - done ingest for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/MCQExam.aspx.designer.cs
+2026-01-02 11:32:14,611 - Knowledge - INFO - [LLM_CALL] Completed: AdminQueue.aspx.designer.cs:chunk1, Duration: 10925ms, PromptTokens: 2336, CompletionTokens: 294, Cost: $0.00035
+2026-01-02 11:32:14,725 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/EditExam.aspx.designer.cs
+2026-01-02 11:32:14,792 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/Properties/AssemblyInfo.cs
+2026-01-02 11:32:14,872 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/Leaderboard.aspx.designer.cs
+2026-01-02 11:32:15,112 - Knowledge - INFO - done ingest for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/AdminQueue.aspx.designer.cs
+2026-01-02 11:32:15,144 - Knowledge - INFO - [LLM_CALL] Completed: ExamResult.aspx.designer.cs:chunk1, Duration: 34071ms, PromptTokens: 5790, CompletionTokens: 405, Cost: $0.00074
+2026-01-02 11:32:15,445 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/TheoryExam.aspx.designer.cs
+2026-01-02 11:32:15,458 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/MCQExam.aspx.cs
+2026-01-02 11:32:15,697 - Knowledge - INFO - done ingest for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/ExamResult.aspx.designer.cs
+2026-01-02 11:32:15,699 - Knowledge - INFO - [LLM_CALL] Completed: EditMCQ.aspx.cs:chunk1, Duration: 30643ms, PromptTokens: 6830, CompletionTokens: 567, Cost: $0.00091
+2026-01-02 11:32:15,773 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/Leaderboard.aspx.cs
+2026-01-02 11:32:15,858 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/MCQSet.aspx.designer.cs
+2026-01-02 11:32:16,119 - Knowledge - INFO - done ingest for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/EditMCQ.aspx.cs
+2026-01-02 11:32:16,120 - Knowledge - INFO - [LLM_CALL] Completed: AdminLeaderboard.aspx.designer.cs:chunk1, Duration: 19291ms, PromptTokens: 2594, CompletionTokens: 318, Cost: $0.00039
+2026-01-02 11:32:16,724 - Knowledge - INFO - done ingest for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/AdminLeaderboard.aspx.designer.cs
+2026-01-02 11:32:17,865 - Knowledge - INFO - [LLM_CALL] Completed: LoginPage.aspx.designer.cs:chunk1, Duration: 37956ms, PromptTokens: 2340, CompletionTokens: 362, Cost: $0.00038
+2026-01-02 11:32:18,063 - Knowledge - INFO - done ingest for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/LoginPage.aspx.designer.cs
+2026-01-02 11:32:18,065 - Knowledge - INFO - [LLM_CALL] Completed: StartExam.aspx.cs:chunk1, Duration: 28086ms, PromptTokens: 6632, CompletionTokens: 794, Cost: $0.00098
+2026-01-02 11:32:18,889 - Knowledge - INFO - done ingest for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/StartExam.aspx.cs
+2026-01-02 11:32:18,890 - Knowledge - INFO - [LLM_CALL] Completed: TheorySet.aspx.cs:chunk1, Duration: 23587ms, PromptTokens: 8972, CompletionTokens: 676, Cost: $0.00117
+2026-01-02 11:32:19,184 - Knowledge - INFO - done ingest for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/TheorySet.aspx.cs
+2026-01-02 11:32:19,184 - Knowledge - INFO - [LLM_CALL] Completed: MCQSet.aspx.cs:chunk1, Duration: 32584ms, PromptTokens: 9182, CompletionTokens: 578, Cost: $0.00115
+2026-01-02 11:32:19,469 - Knowledge - INFO - done ingest for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/MCQSet.aspx.cs
+2026-01-02 11:32:19,471 - Knowledge - INFO - Processing batch of 4 files
+2026-01-02 11:32:19,472 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 270, Duration: 3ms
+2026-01-02 11:32:19,752 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/MCQExam.aspx.designer.cs
+2026-01-02 11:32:19,833 - Knowledge - INFO - Processing batch of 4 files
+2026-01-02 11:32:19,834 - Knowledge - INFO - Processing batch of 4 files
+2026-01-02 11:32:19,834 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 365ms
+2026-01-02 11:32:19,949 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/CSS/bootstrap.css
+2026-01-02 11:32:20,029 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/ExamResult.aspx.designer.cs
+2026-01-02 11:32:20,111 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/LoginPage.aspx.designer.cs
+2026-01-02 11:32:20,212 - Knowledge - INFO - Progress: 76.0% | Files: 50/50 | Rate: 0.89 files/sec | Queue: 0
+2026-01-02 11:32:20,213 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 270, Duration: 0ms
+2026-01-02 11:32:20,336 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/EditMCQ.aspx.cs
+2026-01-02 11:32:20,408 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/StartExam.aspx.cs
+2026-01-02 11:32:20,495 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/MCQSet.aspx.cs
+2026-01-02 11:32:20,665 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 453ms
+2026-01-02 11:32:20,753 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/TheorySet.aspx.cs
+2026-01-02 11:32:20,834 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/AdminPanel.aspx.cs
+2026-01-02 11:32:20,932 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/AdminLeaderboard.aspx.designer.cs
+2026-01-02 11:32:21,035 - Knowledge - INFO - Progress: 100.0% | Files: 50/50 | Rate: 0.85 files/sec | Queue: 0
+2026-01-02 11:32:21,284 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/DownloadPdf.aspx.designer.cs
+2026-01-02 11:32:21,362 - Knowledge - INFO - process ingested knowledge for /app/data/tataelxsimockapisolutions5451/7667/b8647l5/Online-Examination-System-7667/OnlineExamSystem/AdminQueue.aspx.designer.cs
+2026-01-02 11:32:21,938 - Knowledge - INFO - Knowledge creation complete
+2026-01-02 11:32:22,101 - Knowledge - INFO - ==================================================
+2026-01-02 11:32:22,292 - Knowledge - INFO - KNOWLEDGE GRAPH GENERATION PERFORMANCE SUMMARY
+2026-01-02 11:32:22,455 - Knowledge - INFO - ==================================================
+2026-01-02 11:32:22,632 - Knowledge - INFO - Total processing time: 61.30 seconds (1.02 minutes)
+2026-01-02 11:32:22,803 - Knowledge - INFO - Files processed: 0
+2026-01-02 11:32:23,012 - Knowledge - INFO - Processing rate: 0.00 files/second
+2026-01-02 11:32:23,151 - Knowledge - INFO - 
+[TIME_BREAKDOWN]
+2026-01-02 11:32:23,334 - Knowledge - INFO - File Reading: 0.00s (0.0%)
+2026-01-02 11:32:23,541 - Knowledge - INFO - LLM Processing: 738.13s (1204.1%)
+2026-01-02 11:32:23,755 - Knowledge - INFO - MongoDB Operations: 0.00s (0.0%)
+2026-01-02 11:32:23,962 - Knowledge - INFO - Redis Operations: 0.00s (0.0%)
+2026-01-02 11:32:24,109 - Knowledge - INFO - WebSocket Communication: 3.91s (6.4%)
+2026-01-02 11:32:24,266 - Knowledge - INFO - 
+[LLM_STATS]
+2026-01-02 11:32:24,417 - Knowledge - INFO - Total LLM calls: 30
+2026-01-02 11:32:24,578 - Knowledge - INFO - Average LLM response time: 24604ms
+2026-01-02 11:32:24,787 - Knowledge - INFO - Average prompt tokens: 4679.0
+2026-01-02 11:32:24,964 - Knowledge - INFO - Average completion tokens: 428.2
+2026-01-02 11:32:25,152 - Knowledge - INFO - Total prompt tokens: 140370
+2026-01-02 11:32:25,326 - Knowledge - INFO - Total completion tokens: 12846
+2026-01-02 11:32:25,490 - Knowledge - INFO - Total LLM cost: $0.0192
+2026-01-02 11:32:25,653 - Knowledge - INFO - 
+[DATABASE_STATS]
+2026-01-02 11:32:25,843 - Knowledge - INFO - MongoDB operations: 0
+2026-01-02 11:32:26,029 - Knowledge - INFO - Redis operations: 0
+2026-01-02 11:32:26,222 - Knowledge - INFO - 
+[COMMUNICATION_STATS]
+2026-01-02 11:32:26,422 - Knowledge - INFO - WebSocket messages sent: 15
+2026-01-02 11:32:26,580 - Knowledge - INFO - Average message size: 134.1 bytes
+2026-01-02 11:32:26,773 - Knowledge - INFO - 
+[WORKER_STATS]
+2026-01-02 11:32:26,971 - Knowledge - INFO - 
+[FILE_TYPE_STATS]
+2026-01-02 11:32:27,132 - Knowledge - INFO - 
+[SLOWEST_FILES]
+2026-01-02 11:32:27,308 - Knowledge - INFO - ==================================================
+2026-01-02 11:32:27,487 - Knowledge - INFO - ==================================================
+2026-01-02 11:32:27,661 - Knowledge - INFO - KNOWLEDGE GRAPH GENERATION PERFORMANCE SUMMARY
+2026-01-02 11:32:27,814 - Knowledge - INFO - ==================================================
+2026-01-02 11:32:27,966 - Knowledge - INFO - Total processing time: 66.75 seconds (1.11 minutes)
+2026-01-02 11:32:28,150 - Knowledge - INFO - Files processed: 50 of 50
+2026-01-02 11:32:28,323 - Knowledge - INFO - Processing rate: 0.75 files/second
+2026-01-02 11:32:28,503 - Knowledge - INFO - WebSocket messages sent: 7
+2026-01-02 11:32:28,665 - Knowledge - INFO - MongoDB operations: 50
+2026-01-02 11:32:28,825 - Knowledge - INFO - Average MongoDB ops per file: 1.00
+2026-01-02 11:32:28,979 - Knowledge - INFO - LLM costs: $0.0192
+2026-01-02 11:32:29,150 - Knowledge - INFO - Prompt tokens: 140370
+2026-01-02 11:32:29,360 - Knowledge - INFO - Completion tokens: 12846
+2026-01-02 11:32:29,552 - Knowledge - INFO - Updating org costs, total cost: 0.019175399999999995
+2026-01-02 11:32:29,753 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 268, Duration: 0ms
+2026-01-02 11:32:29,969 - Knowledge - INFO - Saving knowledge to Redis...
+2026-01-02 11:32:30,183 - Knowledge - INFO - Knowledge saved to Redis successfully
